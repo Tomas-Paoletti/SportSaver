@@ -31,4 +31,7 @@ AxiosInstance.get(url)
     console.log(topScorers);
 })
     .catch(console.error); // Error handling
+//https://www.sporting.com.ar/remera%20adidas
+//https://www.dexter.com.ar/buscar?q=zapatilla+roja+adidas se concatena al princicpio buscar?q= en los espacios se cambian por +
+//https://vaypol.com.ar/productos/k/remera-de-river/p/1 //cambiart desde k y cambiar valores vacios por -
 //# sourceMappingURL=index.js.map

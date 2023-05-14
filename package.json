@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node dist/index.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    "dev": "nodemon  src/index.ts",
+    "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
+    "watch:serve": "ts-node --inspect src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +16,12 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.18",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.22",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.3"
   }
 }
